@@ -54,42 +54,30 @@ OscFunctionBegin
 	
 	/******* Create the framework **********/
 	OscCall( OscCreate, &data.hFramework);	
-	//	fprintf(stderr, "%s: Unable to create framework.\n", __func__);
-	OscAssert_em( NULL == data.hFramework, EOUT_OF_MEMORY, "hFramework error");
-	
-	/******* Load the framework module dependencies. **********/
 	OscCall( OscLoadDependencies, data.hFramework, deps, sizeof(deps)/sizeof(struct OSC_DEPENDENCY));
-	// fprintf(stderr, "%s: ERROR: Unable to load dependencies! (%d)\n", __func__, err);
+
+	OscLogSetConsoleLogLevel(ERROR);
+	OscLogSetFileLogLevel(ERROR);
 
 	
-	/********* Seed the random generator *************/
+	/* Seed the random generator */
 	srand(OscSupCycGet());
 	
-#if defined(OSC_HOST) || defined(OSC_SIM)
-	OscCall( OscFrdCreateConstantReader, &data.hFileNameReader, TEST_IMAGE_FN);
-	//	OscLog(ERROR, "%s: Unable to create constant file name reader for %s! (%d)\n", __func__, TEST_IMAGE_FN, err);
-
-	OscCall( OscCamSetFileNameReader, data.hFileNameReader);
-	//	OscLog(ERROR, "%s: Unable to set file name reader for camera! (%d)\n", __func__, err);
-#endif /* OSC_HOST or OSC_SIM */
-
 	/* Set the camera registers to sane default values. */
 	OscCall( OscCamPresetRegs);
-	// OscLog(ERROR, "%s: Unable to preset camera registers! (%d)\n", __func__, err);
+	OscCall( OscCamSetupPerspective, OSC_CAM_PERSPECTIVE_DEFAULT);
 
-	OscCall( OscCamSetupPerspective, OSC_CAM_PERSPECTIVE_DEFAULT );
+	/* Configure camera emulation on host */
+#if defined(OSC_HOST) || defined(OSC_SIM)
+	OscCall( OscFrdCreateConstantReader, &data.hFileNameReader, TEST_IMAGE_FN);
+	OscCall( OscCamSetFileNameReader, data.hFileNameReader);
+#endif /* OSC_HOST or OSC_SIM */
 	
-	/* Set up one frame buffer with enough space for the maximum
-	 * camera resolution in cached memory. */
-	OscCall( OscCamSetFrameBuffer, 0, OSC_CAM_MAX_IMAGE_WIDTH*OSC_CAM_MAX_IMAGE_HEIGHT, data.u8FrameBuffer, TRUE);
-	//	OscLog(ERROR, "%s: Unable to set up frame buffer!\n", __func__);
-
-	OscLogSetConsoleLogLevel(DEBUG);
-	OscLogSetFileLogLevel(WARN);
-	
+	/* Set up one frame buffer for maximum image size. Cached memory. */
+	OscCall( OscCamSetFrameBuffer, 0, OSC_CAM_MAX_IMAGE_WIDTH*OSC_CAM_MAX_IMAGE_HEIGHT, data.u8FrameBuffer, TRUE);	
 	
 OscFunctionCatch
-	/* Unload and destory if a error was catched while above */
+	/* Unload and destory if a error was catched above */
 	OscUnloadDependencies(data.hFramework, deps, sizeof(deps)/sizeof(struct OSC_DEPENDENCY));
 	OscDestroy(data.hFramework);
 	OscMark_m( "Initialization failed!");
@@ -106,27 +94,36 @@ OscFunctionEnd
  *//*********************************************************************/
 int main(const int argc, const char * argv[]) {
 OscFunctionBegin
-//	uint8 *pCurRawImg = NULL;
+	uint8 *pCurRawImg = NULL;
+	OSC_ERR err;
 	
+	/* Initialize system */
 	OscCall( Init, argc, argv);
 	
 	/* Image acquisation loop */	
-//	while( true)
-//	{		
-//		err = OscCamSetupCapture( 0);	
-//		err = OscGpioTriggerImage();
-//		
-//		err = OscCamReadPicture( 0, &pCurRawImg, 0, CAMERA_TIMEOUT);
-//		
-//		ProcessFrame( pCurRawImg);	
-//	}	
+	while( true)
+	{		
+		err = OscCamSetupCapture( 0);	
+		err = OscGpioTriggerImage();
+		
+		while( true)
+		{
+			err = OscCamReadPicture( 0, &pCurRawImg, 0, CAMERA_TIMEOUT);
+			if(err == SUCCESS)
+			{ 
+				break;
+			}
+		}
+		
+		ProcessFrame( pCurRawImg);
+	}	
 
 
 OscFunctionCatch
 	OscUnloadDependencies(data.hFramework, deps, sizeof(deps)/sizeof(struct OSC_DEPENDENCY));
 	OscDestroy(data.hFramework);
 	
-	OscLog(INFO, "Quit application abnormally.\n");
+	OscLog(INFO, "Quit application abnormally!\n");
 
 OscFunctionEnd
 }
