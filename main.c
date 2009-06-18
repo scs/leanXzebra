@@ -17,8 +17,8 @@
 */
 
 /*! @file main.c
- * @brief Main file of the template application. Mainly contains initialization
- * code.
+ * @brief Main file of the template application. Contains initialization
+ * and image acquisition loop.
  */
 
 #include "template.h"
