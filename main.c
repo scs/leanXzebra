@@ -31,15 +31,7 @@
 /*! @brief This stores all variables needed by the algorithm. */
 struct TEMPLATE data;
 
-/*! @brief The framework module dependencies of this application. */
-struct OSC_DEPENDENCY deps[] = {
-	{ "log", OscLogCreate, OscLogDestroy },
-	{ "sup", OscSupCreate, OscSupDestroy },
-	{ "bmp", OscBmpCreate, OscBmpDestroy },
-	{ "cam", OscCamCreate, OscCamDestroy },
-	{ "vis", OscVisCreate, OscVisDestroy },
-	{ "gpio", OscGpioCreate, OscGpioDestroy }
-};
+
 
 /*********************************************************************//*!
  * @brief Initialize everything so the application is fully operable
@@ -52,10 +44,15 @@ OscFunctionBegin
 	
 	memset(&data, 0, sizeof(struct TEMPLATE));
 	
-	/******* Create the framework **********/
-	OscCall( OscCreate, &data.hFramework);	
-	OscCall( OscLoadDependencies, data.hFramework, deps, sizeof(deps)/sizeof(struct OSC_DEPENDENCY));
-
+	/******* Create the framework **********/	
+	OscCall( OscCreate, 
+		&OscModule_cam, 
+		&OscModule_bmp, 
+		&OscModule_vis, 
+		&OscModule_gpio, 
+		&OscModule_log, 
+		&OscModule_sup);   
+	
 	OscLogSetConsoleLogLevel(ERROR);
 	OscLogSetFileLogLevel(ERROR);
 
@@ -77,9 +74,8 @@ OscFunctionBegin
 	OscCall( OscCamSetFrameBuffer, 0, OSC_CAM_MAX_IMAGE_WIDTH*OSC_CAM_MAX_IMAGE_HEIGHT, data.u8FrameBuffer, TRUE);	
 	
 OscFunctionCatch
-	/* Unload and destory if a error was catched above */
-	OscUnloadDependencies(data.hFramework, deps, sizeof(deps)/sizeof(struct OSC_DEPENDENCY));
-	OscDestroy(data.hFramework);
+	/* Destruct framwork due to error above. */
+	OscDestroy();
 	OscMark_m( "Initialization failed!");
 	
 OscFunctionEnd
@@ -103,26 +99,25 @@ OscFunctionBegin
 	/* Image acquisation loop */	
 	while( true)
 	{		
-		err = OscCamSetupCapture( 0);	
-		err = OscGpioTriggerImage();
+		OscCall( OscCamSetupCapture, 0);	
+		OscCall( OscGpioTriggerImage);
 		
 		while( true)
 		{
 			err = OscCamReadPicture( 0, &pCurRawImg, 0, CAMERA_TIMEOUT);
+
 			if(err == SUCCESS)
 			{ 
 				break;
 			}
 		}
 		
-		ProcessFrame( pCurRawImg);
+		OscCall( ProcessFrame, pCurRawImg);
 	}	
 
 
 OscFunctionCatch
-	OscUnloadDependencies(data.hFramework, deps, sizeof(deps)/sizeof(struct OSC_DEPENDENCY));
-	OscDestroy(data.hFramework);
-	
+	OscDestroy();
 	OscLog(INFO, "Quit application abnormally!\n");
 
 OscFunctionEnd

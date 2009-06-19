@@ -45,10 +45,7 @@ struct TEMPLATE
 	uint8 u8FrameBuffer[OSC_CAM_MAX_IMAGE_HEIGHT*OSC_CAM_MAX_IMAGE_WIDTH];
 	/*! @brief A buffer to hold the resulting color image. */
 	uint8 u8ResultImage[3*OSC_CAM_MAX_IMAGE_WIDTH*OSC_CAM_MAX_IMAGE_HEIGHT];
-	
-	/*! @brief Handle to the framework instance. */
-	void *hFramework;
-	
+		
 #if defined(OSC_HOST) || defined(OSC_SIM)
 	/*! @brief File name reader for camera images on the host. */
 	void *hFileNameReader;
@@ -71,7 +68,8 @@ extern struct TEMPLATE data;
  * be the starting point where you add your code.
  * 
  * @param pRawImg The raw image to process.
+ * @return SUCCESS or appropriate error code.
  *//*********************************************************************/
-void ProcessFrame(uint8 *pRawImg);
+OSC_ERR ProcessFrame(uint8 *pRawImg);
 
 #endif /*TEMPLATE_H_*/

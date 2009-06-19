@@ -23,29 +23,22 @@
 /* Definitions specific to this application. Also includes the Oscar main header file. */
 #include "template.h"
 
-void ProcessFrame(uint8 *pRawImg)
-{
+OSC_ERR ProcessFrame(uint8 *pRawImg) {
+OscFunctionBegin
 	OSC_ERR err;
 	enum EnBayerOrder enBayerOrder;
-	
-	err = OscCamGetBayerOrder(&enBayerOrder, 0, 0);
-	if (err != SUCCESS)
-	{
-		OscLog(ERROR, "%s: Error getting bayer order! (%d)\n", __func__, err);
-		return;
-	}
-	
-	/* Use a framework function to debayer the image. */
-	err = OscVisDebayer(pRawImg, OSC_CAM_MAX_IMAGE_WIDTH, OSC_CAM_MAX_IMAGE_HEIGHT, enBayerOrder, data.u8ResultImage);
-	if (err != SUCCESS)
-	{
-		OscLog(ERROR, "%s: Error debayering image! (%d)\n", __func__, err);
-		return;
-	}
-	
+
+	/* Debayer to monochron image. Color sensor assumed. */	
+	OscCall( OscCamGetBayerOrder, &enBayerOrder, 0, 0);
+	OscCall( OscVisDebayer, pRawImg, OSC_CAM_MAX_IMAGE_WIDTH, OSC_CAM_MAX_IMAGE_HEIGHT, enBayerOrder, data.u8ResultImage);
+
+
 	/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 	/* |                                                                 */
 	/* |                    Add your code here                           */
 	/* |                                                                 */
 	/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+OscFunctionCatch
+
+OscFunctionEnd
 }
