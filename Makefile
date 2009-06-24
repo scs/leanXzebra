@@ -116,6 +116,16 @@ $(APP_NAME).app: $(addsuffix _target, $(PRODUCTS))
 	rm -rf $@
 	cp -rL app $@
 
+# Controlling the gdbserver on target
+.PHONY : gdbserver-start
+gdbserver-start:
+	uxterm -e ssh root@$(CONFIG_TARGET_IP) gdbserver :7777 /mnt/app/$(OUT)$(TARGET_SUFFIX)
+
+.PHONY : gdbserver-kill
+gdbserver-kill:
+	uxterm -e ssh root@$(CONFIG_TARGET_IP) killall gdbserver
+
+
 # Cleans the module.
 clean:
 	rm -rf build *.gdb $(BINARIES) $(APP_NAME).app
