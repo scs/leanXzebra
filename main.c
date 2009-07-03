@@ -88,13 +88,7 @@ OscFunctionCatch()
 	
 OscFunctionEnd()
 
-/*********************************************************************//*!
- * @brief Program entry
- * 
- * @param argc Command line argument count.
- * @param argv Command line argument strings.
- * @return 0 on success
- *//*********************************************************************/
+
 OscFunction(mainFunction, const int argc, const char * argv[])
 	uint8 *pCurRawImg = NULL;
 	OSC_ERR err;
@@ -128,6 +122,13 @@ OscFunctionCatch()
 	OscLog(INFO, "Quit application abnormally!\n");
 OscFunctionEnd()
 
+/*********************************************************************//*!
+ * @brief Program entry
+ *
+ * @param argc Command line argument count.
+ * @param argv Command line argument strings.
+ * @return 0 on success
+*//*********************************************************************/
 int main(const int argc, const char * argv[]) {
 	if (mainFunction(argc, argv) == SUCCESS)
 		return 0;
