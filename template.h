@@ -23,8 +23,8 @@
 #define TEMPLATE_H_
 
 /*--------------------------- Includes -----------------------------*/
-#include "oscar.h"
 #include <stdio.h>
+#include "oscar.h"
 
 /*--------------------------- Settings ------------------------------*/
 /*! @brief Timeout (ms) when waiting for a new picture. */
@@ -42,9 +42,14 @@
 struct TEMPLATE
 {
 	/*! @brief The frame buffer for the frame capture device driver.*/
-	uint8 u8FrameBuffer[OSC_CAM_MAX_IMAGE_HEIGHT*OSC_CAM_MAX_IMAGE_WIDTH];
-	/*! @brief A buffer to hold the resulting color image. */
-	uint8 u8ResultImage[3*OSC_CAM_MAX_IMAGE_WIDTH*OSC_CAM_MAX_IMAGE_HEIGHT];
+	uint8 u8FrameBuffer[ OSC_CAM_MAX_IMAGE_HEIGHT*OSC_CAM_MAX_IMAGE_WIDTH];
+	struct OSC_PICTURE pictureRaw;
+	/*! @brief A buffer to hold a full size color image. */
+	uint8 u8ColorImage[ 3*OSC_CAM_MAX_IMAGE_WIDTH*OSC_CAM_MAX_IMAGE_HEIGHT];
+	struct OSC_PICTURE pictureColor;
+	/*! @brief A buffer to hold a quarter size grey image. */
+	uint8 u8GreyImage[ OSC_CAM_MAX_IMAGE_WIDTH*OSC_CAM_MAX_IMAGE_HEIGHT/4];
+	struct OSC_PICTURE pictureGrey;
 		
 #if defined(OSC_HOST) || defined(OSC_SIM)
 	/*! @brief File name reader for camera images on the host. */
@@ -64,12 +69,12 @@ extern struct TEMPLATE data;
  * @brief Process a newly captured frame.
  * 
  * In the case of this template, this consists just of debayering the
- * image and writing the result to the result image buffer. This should
- * be the starting point where you add your code.
+ * image and writing the result to the result image buffer. Debayer
+ * to full size color and quater size grey is applied. This should be
+ * the starting point where you add your code.
  * 
- * @param pRawImg The raw image to process.
  * @return SUCCESS or appropriate error code.
  *//*********************************************************************/
-OSC_ERR ProcessFrame(uint8 *pRawImg);
+OSC_ERR ProcessFrame(void);
 
 #endif /*TEMPLATE_H_*/

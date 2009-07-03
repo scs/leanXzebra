@@ -39,8 +39,7 @@ struct TEMPLATE data;
  * 
  * @return SUCCESS or an appropriate error code.
  *//*********************************************************************/
-static OSC_ERR Init(const int argc, const char * argv[]) {
-OscFunctionBegin	
+OscFunction(static Init, const int argc, const char * argv[])
 	
 	memset(&data, 0, sizeof(struct TEMPLATE));
 	
@@ -71,15 +70,23 @@ OscFunctionBegin
 #endif /* OSC_HOST or OSC_SIM */
 	
 	/* Set up one frame buffer for maximum image size. Cached memory. */
-	OscCall( OscCamSetFrameBuffer, 0, OSC_CAM_MAX_IMAGE_WIDTH*OSC_CAM_MAX_IMAGE_HEIGHT, data.u8FrameBuffer, TRUE);	
+	OscCall( OscCamSetFrameBuffer, 0, OSC_CAM_MAX_IMAGE_WIDTH*OSC_CAM_MAX_IMAGE_HEIGHT, data.u8FrameBuffer, TRUE);
+
+	/* Initialize picture structures */
+	data.pictureGrey.data = data.u8GreyImage;
+	data.pictureGrey.width = OSC_CAM_MAX_IMAGE_WIDTH;
+	data.pictureGrey.height = OSC_CAM_MAX_IMAGE_HEIGHT;
+
+	data.pictureColor.data = data.u8ColorImage;
+	data.pictureColor.width = OSC_CAM_MAX_IMAGE_WIDTH;
+	data.pictureColor.height = OSC_CAM_MAX_IMAGE_HEIGHT;
 	
-OscFunctionCatch
+OscFunctionCatch()
 	/* Destruct framwork due to error above. */
 	OscDestroy();
 	OscMark_m( "Initialization failed!");
 	
-OscFunctionEnd
-};
+OscFunctionEnd()
 
 /*********************************************************************//*!
  * @brief Program entry
@@ -88,15 +95,14 @@ OscFunctionEnd
  * @param argv Command line argument strings.
  * @return 0 on success
  *//*********************************************************************/
-int main(const int argc, const char * argv[]) {
-OscFunctionBegin
+OscFunction(mainFunction, const int argc, const char * argv[])
 	uint8 *pCurRawImg = NULL;
 	OSC_ERR err;
 	
 	/* Initialize system */
 	OscCall( Init, argc, argv);
 	
-	/* Image acquisation loop */	
+	/* Image acquisation loop */
 	while( true)
 	{		
 		OscCall( OscCamSetupCapture, 0);	
@@ -112,13 +118,19 @@ OscFunctionBegin
 			}
 		}
 		
-		OscCall( ProcessFrame, pCurRawImg);
+		data.pictureRaw.data = pCurRawImg;
+		OscCall( ProcessFrame);
 	}	
 
 
-OscFunctionCatch
+OscFunctionCatch()
 	OscDestroy();
 	OscLog(INFO, "Quit application abnormally!\n");
+OscFunctionEnd()
 
-OscFunctionEnd
+int main(const int argc, const char * argv[]) {
+	if (mainFunction(argc, argv) == SUCCESS)
+		return 0;
+	else
+		return 1;
 }

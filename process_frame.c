@@ -23,14 +23,15 @@
 /* Definitions specific to this application. Also includes the Oscar main header file. */
 #include "template.h"
 
-OSC_ERR ProcessFrame(uint8 *pRawImg) {
-OscFunctionBegin
-	OSC_ERR err;
+OscFunction(ProcessFrame)
 	enum EnBayerOrder enBayerOrder;
 
-	/* Debayer to monochron image. Color sensor assumed. */	
+	/* Debayer to full size color image. Color sensor assumed. */
 	OscCall( OscCamGetBayerOrder, &enBayerOrder, 0, 0);
-	OscCall( OscVisDebayer, pRawImg, OSC_CAM_MAX_IMAGE_WIDTH, OSC_CAM_MAX_IMAGE_HEIGHT, enBayerOrder, data.u8ResultImage);
+	OscCall( OscVisDebayer, data.pictureRaw.data, OSC_CAM_MAX_IMAGE_WIDTH, OSC_CAM_MAX_IMAGE_HEIGHT, enBayerOrder, data.pictureColor.data);
+
+	/* Or debayer to quarter size grey image. Color sensor assumed. */
+	OscCall( OscVisVectorDebayerGrey, &data.pictureRaw, &data.pictureGrey);
 
 
 	/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -38,7 +39,4 @@ OscFunctionBegin
 	/* |                    Add your code here                           */
 	/* |                                                                 */
 	/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-OscFunctionCatch
-
-OscFunctionEnd
-}
+OscFunctionEnd()

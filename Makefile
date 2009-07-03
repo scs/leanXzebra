@@ -78,7 +78,7 @@ deploy: $(APP_NAME).app
 	tar c $< | ssh root@$(CONFIG_TARGET_IP) 'rm -rf $< && tar x' || true
 
 run:
-	ssh root@$(CONFIG_TARGET_IP) /mnt/app/$(APP_NAME).app/run.sh || true
+	uxterm -e ssh root@$(CONFIG_TARGET_IP) /mnt/app/$(APP_NAME).app/run.sh || true
 
 reconfigure:
 ifeq '$(CONFIG_PRIVATE_FRAMEWORK)' 'n'
@@ -119,7 +119,7 @@ $(APP_NAME).app: $(addsuffix _target, $(PRODUCTS))
 # Controlling the gdbserver on target
 .PHONY : gdbserver-start
 gdbserver-start:
-	uxterm -e ssh root@$(CONFIG_TARGET_IP) gdbserver :7777 /mnt/app/$(OUT)$(TARGET_SUFFIX)
+	uxterm -e ssh root@$(CONFIG_TARGET_IP) gdbserver :7777 /mnt/app/$(APP_NAME).app/app
 
 .PHONY : gdbserver-kill
 gdbserver-kill:
