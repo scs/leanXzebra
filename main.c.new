@@ -42,22 +42,7 @@ struct TEMPLATE data;
 OscFunction(static Init, const int argc, const char * argv[])
 	
 	memset(&data, 0, sizeof(struct TEMPLATE));
-	
-	/******* Create the framework **********/	
-	OscCall( OscCreate, 
-		&OscModule_cam, 
-		&OscModule_bmp, 
-		&OscModule_vis, 
-		&OscModule_gpio, 
-		&OscModule_log, 
-		&OscModule_sup);   
-	
-	OscLogSetConsoleLogLevel(ERROR);
-	OscLogSetFileLogLevel(ERROR);
 
-	
-	/* Seed the random generator */
-	srand(OscSupCycGet());
 	
 	/* Set the camera registers to sane default values. */
 	OscCall( OscCamPresetRegs);
@@ -129,7 +114,7 @@ OscFunctionEnd()
  * @param argv Command line argument strings.
  * @return 0 on success
 *//*********************************************************************/
-int main(const int argc, const char * argv[]) {
+int mymain(const int argc, const char * argv[]) {
 	if (mainFunction(argc, argv) == SUCCESS)
 		return 0;
 	else

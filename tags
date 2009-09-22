@@ -1,0 +1,551 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.7	//
+ASSERT_POS	img_scanner.c	40;"	d	file:
+ASSERT_POS	img_scanner.c	43;"	d	file:
+BUFFER_INCR	decoder.h	65;"	d
+BUFFER_MAX	decoder.h	60;"	d
+BUFFER_MIN	decoder.h	53;"	d
+CACHE_CONSISTENCY	img_scanner.c	51;"	d	file:
+CACHE_HYSTERESIS	img_scanner.c	60;"	d	file:
+CACHE_PROXIMITY	img_scanner.c	55;"	d	file:
+CACHE_TIMEOUT	img_scanner.c	64;"	d	file:
+CAM_REG_CHIP_CONTROL	leanXmain.c	33;"	d	file:
+CAM_REG_RESERVED_0x20	leanXmain.c	32;"	d	file:
+DATABUF	leanXip.h	27;"	d
+DEBUG_LEVEL	decoder.c	35;"	d	file:
+DEBUG_LEVEL	ean.c	29;"	d	file:
+DEBUG_LEVEL	scanner.c	31;"	d	file:
+DECODE_WINDOW	decoder.h	48;"	d
+EAN_LEFT	ean.c	/^    EAN_LEFT   = 0x0000,$/;"	e	enum:symbol_partial_e	file:
+EAN_RIGHT	ean.c	/^    EAN_RIGHT  = 0x1000$/;"	e	enum:symbol_partial_e	file:
+ENABLE_CODE128	config.h	5;"	d
+ENABLE_CODE39	config.h	8;"	d
+ENABLE_EAN	config.h	11;"	d
+ENABLE_I25	config.h	14;"	d
+ENABLE_PDF417	config.h	17;"	d
+ERRINFO_MAGIC	error.h	46;"	d
+ERR_MAX	error.c	53;"	d	file:
+EWMA_WEIGHT	scanner.c	58;"	d	file:
+HAVE_ATEXIT	config.h	20;"	d
+HAVE_DLFCN_H	config.h	23;"	d
+HAVE_FCNTL_H	config.h	26;"	d
+HAVE_GETPAGESIZE	config.h	29;"	d
+HAVE_INTTYPES_H	config.h	32;"	d
+HAVE_JPEGLIB_H	config.h	35;"	d
+HAVE_LIBJPEG	config.h	38;"	d
+HAVE_LIBPTHREAD	config.h	41;"	d
+HAVE_LINUX_VIDEODEV2_H	config.h	44;"	d
+HAVE_LINUX_VIDEODEV_H	config.h	47;"	d
+HAVE_MEMORY_H	config.h	50;"	d
+HAVE_MEMSET	config.h	53;"	d
+HAVE_MMAP	config.h	56;"	d
+HAVE_POLL_H	config.h	59;"	d
+HAVE_PTHREAD_H	config.h	62;"	d
+HAVE_SETENV	config.h	65;"	d
+HAVE_STDINT_H	config.h	68;"	d
+HAVE_STDLIB_H	config.h	71;"	d
+HAVE_STRINGS_H	config.h	74;"	d
+HAVE_STRING_H	config.h	77;"	d
+HAVE_SYS_IOCTL_H	config.h	80;"	d
+HAVE_SYS_IPC_H	config.h	83;"	d
+HAVE_SYS_MMAN_H	config.h	86;"	d
+HAVE_SYS_SHM_H	config.h	89;"	d
+HAVE_SYS_STAT_H	config.h	92;"	d
+HAVE_SYS_TIMES_H	config.h	95;"	d
+HAVE_SYS_TIME_H	config.h	98;"	d
+HAVE_SYS_TYPES_H	config.h	101;"	d
+HAVE_UINTPTR_T	config.h	104;"	d
+HAVE_UNISTD_H	config.h	107;"	d
+HAVE_X	config.h	195;"	d
+HAVE_X11_EXTENSIONS_XSHM_H	config.h	110;"	d
+HAVE_X11_EXTENSIONS_XVLIB_H	config.h	113;"	d
+HOST_CC	Makefile	/^HOST_CC = gcc $/;"	m
+HOST_CFLAGS	Makefile	/^HOST_CFLAGS = $(HOST_FEATURES) -DOSC_HOST -g$/;"	m
+HOST_CFLAGS	Makefile	/^HOST_CFLAGS = $(HOST_FEATURES) -Wall -pedantic -DOSC_HOST -g$/;"	m
+HOST_LDFLAGS	Makefile	/^HOST_LDFLAGS = -lm$/;"	m
+HOST_SUFFIX	Makefile	/^HOST_SUFFIX = _host$/;"	m
+H_LEANXALGOS	leanXalgos.h	23;"	d
+H_LEANXIP	leanXip.h	23;"	d
+H_LEANXOVERLAY	leanXoverlay.h	23;"	d
+H_LEANXTOOLS	leanXtools.h	23;"	d
+ImgStats	leanXalgos.h	/^struct ImgStats {$/;"	s
+ImgStats	leanXalgos.h	/^} ImgStats;$/;"	v	typeref:struct:ImgStats
+LT_OBJDIR	config.h	117;"	d
+MAX_CLI	leanXip.h	25;"	d
+MAX_INT_DIGITS	symbol.c	110;"	d	file:
+MOD_MAX	error.c	37;"	d	file:
+NDEBUG	config.h	120;"	d
+NO_MINUS_C_MINUS_O	config.h	123;"	d
+OUT	Makefile	/^OUT = leanXzebra$/;"	m
+OscLog2	leanXtools.c	/^void OscLog2(const enum EnOscLogLevel level, char *strFormat, ...)$/;"	f
+PACKAGE	config.h	126;"	d
+PACKAGE_BUGREPORT	config.h	129;"	d
+PACKAGE_NAME	config.h	132;"	d
+PACKAGE_STRING	config.h	135;"	d
+PACKAGE_TARNAME	config.h	138;"	d
+PACKAGE_VERSION	config.h	141;"	d
+PORT	leanXip.h	28;"	d
+REG_AEC_AGC_ENABLE	leanXmain.c	31;"	d	file:
+RGB_OFFSET	image.h	43;"	d
+RGB_SIZE	image.h	42;"	d
+ROUND	scanner.c	38;"	d	file:
+SENDBUF	leanXip.h	26;"	d
+SEV_ERROR	error.h	/^    SEV_ERROR   = -1,           \/* might be able to recover and continue *\/$/;"	e	enum:errsev_e
+SEV_FATAL	error.h	/^    SEV_FATAL   = -2,           \/* application must terminate *\/$/;"	e	enum:errsev_e
+SEV_MAX	error.c	32;"	d	file:
+SEV_NOTE	error.h	/^    SEV_NOTE    =  2,           \/* fyi *\/$/;"	e	enum:errsev_e
+SEV_OK	error.h	/^    SEV_OK      =  0,$/;"	e	enum:errsev_e
+SEV_WARNING	error.h	/^    SEV_WARNING =  1,           \/* unexpected condition *\/$/;"	e	enum:errsev_e
+SOCK_ERROR	leanXip.h	29;"	d
+SOURCES	Makefile	/^SOURCES = config.c ean.c decoder.c image.c scanner.c error.c img_scanner.c leanXmain.c symbol.c leanXtools.c leanXalgos.c leanXip.c leanXoverlay.c$/;"	m
+STATE_ADDON	ean.h	29;"	d
+STATE_IDX	ean.h	30;"	d
+STDC_HEADERS	config.h	144;"	d
+SYSTEM	leanXmain.c	/^struct SYSTEM {$/;"	s	file:
+TARGETDBG_CFLAGS	Makefile	/^TARGETDBG_CFLAGS = -Wall -pedantic -ggdb3 -DOSC_TARGET$/;"	m
+TARGETSIM_CFLAGS	Makefile	/^TARGETSIM_CFLAGS = -O2 -DOSC_TARGET -DOSC_SIM$/;"	m
+TARGETSIM_CFLAGS	Makefile	/^TARGETSIM_CFLAGS = -Wall -pedantic -O2 -DOSC_TARGET -DOSC_SIM$/;"	m
+TARGETSIM_SUFFIX	Makefile	/^TARGETSIM_SUFFIX = _sim_target$/;"	m
+TARGET_CC	Makefile	/^TARGET_CC = bfin-uclinux-gcc $/;"	m
+TARGET_CFLAGS	Makefile	/^TARGET_CFLAGS = -Wall -pedantic -O2 -DOSC_TARGET$/;"	m
+TARGET_LDFLAGS	Makefile	/^TARGET_LDFLAGS = -Wl,-elf2flt="-s 1048576" -lbfdsp$/;"	m
+TARGET_SUFFIX	Makefile	/^TARGET_SUFFIX = _target$/;"	m
+TEST_CFG	decoder.h	68;"	d
+THRESH_INIT	scanner.c	48;"	d	file:
+VERSION	config.h	147;"	d
+X_DISPLAY_MISSING	config.h	150;"	d
+ZEBRA_ADDON	zebra.h	/^    ZEBRA_ADDON       = 0x0700    \/**< add-on flag mask *\/$/;"	e	enum:zebra::zebra_symbol_type_e
+ZEBRA_ADDON2	zebra.h	/^    ZEBRA_ADDON2      = 0x0200,   \/**< 2-digit add-on flag *\/$/;"	e	enum:zebra::zebra_symbol_type_e
+ZEBRA_ADDON5	zebra.h	/^    ZEBRA_ADDON5      = 0x0500,   \/**< 5-digit add-on flag *\/$/;"	e	enum:zebra::zebra_symbol_type_e
+ZEBRA_BAR	zebra.h	/^    ZEBRA_BAR = 1      \/**< dark area or colored bar segment *\/$/;"	e	enum:zebra::zebra_color_e
+ZEBRA_CFG_ADD_CHECK	zebra.h	/^    ZEBRA_CFG_ADD_CHECK,        \/**< enable check digit when optional *\/$/;"	e	enum:zebra::zebra_config_e
+ZEBRA_CFG_ASCII	zebra.h	/^    ZEBRA_CFG_ASCII,            \/**< enable full ASCII character set *\/$/;"	e	enum:zebra::zebra_config_e
+ZEBRA_CFG_EMIT_CHECK	zebra.h	/^    ZEBRA_CFG_EMIT_CHECK,       \/**< return check digit when present *\/$/;"	e	enum:zebra::zebra_config_e
+ZEBRA_CFG_ENABLE	zebra.h	/^    ZEBRA_CFG_ENABLE = 0,       \/**< enable symbology\/feature *\/$/;"	e	enum:zebra::zebra_config_e
+ZEBRA_CFG_NUM	zebra.h	/^    ZEBRA_CFG_NUM               \/**< number of configs *\/$/;"	e	enum:zebra::zebra_config_e
+ZEBRA_CODE128	zebra.h	/^    ZEBRA_CODE128     =    128,   \/**< Code 128 *\/$/;"	e	enum:zebra::zebra_symbol_type_e
+ZEBRA_CODE39	zebra.h	/^    ZEBRA_CODE39      =     39,   \/**< Code 39. @since 0.4 *\/$/;"	e	enum:zebra::zebra_symbol_type_e
+ZEBRA_EAN13	zebra.h	/^    ZEBRA_EAN13       =     13,   \/**< EAN-13 *\/$/;"	e	enum:zebra::zebra_symbol_type_e
+ZEBRA_EAN8	zebra.h	/^    ZEBRA_EAN8        =      8,   \/**< EAN-8 *\/$/;"	e	enum:zebra::zebra_symbol_type_e
+ZEBRA_ERR_BUSY	zebra.h	/^    ZEBRA_ERR_BUSY,             \/**< all resources busy *\/$/;"	e	enum:zebra::zebra_error_e
+ZEBRA_ERR_CLOSED	zebra.h	/^    ZEBRA_ERR_CLOSED,           \/**< output window is closed *\/$/;"	e	enum:zebra::zebra_error_e
+ZEBRA_ERR_INTERNAL	zebra.h	/^    ZEBRA_ERR_INTERNAL,         \/**< internal library error *\/$/;"	e	enum:zebra::zebra_error_e
+ZEBRA_ERR_INVALID	zebra.h	/^    ZEBRA_ERR_INVALID,          \/**< invalid request *\/$/;"	e	enum:zebra::zebra_error_e
+ZEBRA_ERR_LOCKING	zebra.h	/^    ZEBRA_ERR_LOCKING,          \/**< locking error *\/$/;"	e	enum:zebra::zebra_error_e
+ZEBRA_ERR_NOMEM	zebra.h	/^    ZEBRA_ERR_NOMEM,            \/**< out of memory *\/$/;"	e	enum:zebra::zebra_error_e
+ZEBRA_ERR_NUM	zebra.h	/^    ZEBRA_ERR_NUM               \/**< number of error codes *\/$/;"	e	enum:zebra::zebra_error_e
+ZEBRA_ERR_SYSTEM	zebra.h	/^    ZEBRA_ERR_SYSTEM,           \/**< system error *\/$/;"	e	enum:zebra::zebra_error_e
+ZEBRA_ERR_UNSUPPORTED	zebra.h	/^    ZEBRA_ERR_UNSUPPORTED,      \/**< unsupported request *\/$/;"	e	enum:zebra::zebra_error_e
+ZEBRA_ERR_XDISPLAY	zebra.h	/^    ZEBRA_ERR_XDISPLAY,         \/**< X11 display error *\/$/;"	e	enum:zebra::zebra_error_e
+ZEBRA_ERR_XPROTO	zebra.h	/^    ZEBRA_ERR_XPROTO,           \/**< X11 protocol error *\/$/;"	e	enum:zebra::zebra_error_e
+ZEBRA_FIXED	scanner.c	36;"	d	file:
+ZEBRA_FMT_GRAY	image.h	/^    ZEBRA_FMT_GRAY,$/;"	e	enum:zebra_format_group_e
+ZEBRA_FMT_JPEG	image.h	/^    ZEBRA_FMT_JPEG,$/;"	e	enum:zebra_format_group_e
+ZEBRA_FMT_NUM	image.h	/^    ZEBRA_FMT_NUM$/;"	e	enum:zebra_format_group_e
+ZEBRA_FMT_RGB_PACKED	image.h	/^    ZEBRA_FMT_RGB_PACKED,$/;"	e	enum:zebra_format_group_e
+ZEBRA_FMT_YUV_NV	image.h	/^    ZEBRA_FMT_YUV_NV,$/;"	e	enum:zebra_format_group_e
+ZEBRA_FMT_YUV_PACKED	image.h	/^    ZEBRA_FMT_YUV_PACKED,$/;"	e	enum:zebra_format_group_e
+ZEBRA_FMT_YUV_PLANAR	image.h	/^    ZEBRA_FMT_YUV_PLANAR,$/;"	e	enum:zebra_format_group_e
+ZEBRA_I25	zebra.h	/^    ZEBRA_I25         =     25,   \/**< Interleaved 2 of 5. @since 0.4 *\/$/;"	e	enum:zebra::zebra_symbol_type_e
+ZEBRA_ISBN10	zebra.h	/^    ZEBRA_ISBN10      =     10,   \/**< ISBN-10 (from EAN-13). @since 0.4 *\/$/;"	e	enum:zebra::zebra_symbol_type_e
+ZEBRA_ISBN13	zebra.h	/^    ZEBRA_ISBN13      =     14,   \/**< ISBN-13 (from EAN-13). @since 0.4 *\/$/;"	e	enum:zebra::zebra_symbol_type_e
+ZEBRA_MOD_IMAGE_SCANNER	error.h	/^    ZEBRA_MOD_IMAGE_SCANNER,$/;"	e	enum:errmodule_e
+ZEBRA_MOD_PROCESSOR	error.h	/^    ZEBRA_MOD_PROCESSOR,$/;"	e	enum:errmodule_e
+ZEBRA_MOD_UNKNOWN	error.h	/^    ZEBRA_MOD_UNKNOWN,$/;"	e	enum:errmodule_e
+ZEBRA_MOD_VIDEO	error.h	/^    ZEBRA_MOD_VIDEO,$/;"	e	enum:errmodule_e
+ZEBRA_MOD_WINDOW	error.h	/^    ZEBRA_MOD_WINDOW,$/;"	e	enum:errmodule_e
+ZEBRA_NONE	zebra.h	/^    ZEBRA_NONE        =      0,   \/**< no symbol decoded *\/$/;"	e	enum:zebra::zebra_symbol_type_e
+ZEBRA_OK	zebra.h	/^    ZEBRA_OK = 0,               \/**< no error *\/$/;"	e	enum:zebra::zebra_error_e
+ZEBRA_PARTIAL	zebra.h	/^    ZEBRA_PARTIAL     =      1,   \/**< intermediate status *\/$/;"	e	enum:zebra::zebra_symbol_type_e
+ZEBRA_PDF417	zebra.h	/^    ZEBRA_PDF417      =     57,   \/**< PDF417. @since 0.6 *\/$/;"	e	enum:zebra::zebra_symbol_type_e
+ZEBRA_SCANNER_EWMA_WEIGHT	scanner.c	56;"	d	file:
+ZEBRA_SCANNER_THRESH_FADE	scanner.c	52;"	d	file:
+ZEBRA_SCANNER_THRESH_INIT_WEIGHT	scanner.c	46;"	d	file:
+ZEBRA_SCANNER_THRESH_MIN	scanner.c	42;"	d	file:
+ZEBRA_SPACE	zebra.h	/^    ZEBRA_SPACE = 0,    \/**< light area or space between bars *\/$/;"	e	enum:zebra::zebra_color_e
+ZEBRA_SYMBOL	zebra.h	/^    ZEBRA_SYMBOL      = 0x00ff,   \/**< mask for base symbol type *\/$/;"	e	enum:zebra::zebra_symbol_type_e
+ZEBRA_UPCA	zebra.h	/^    ZEBRA_UPCA        =     12,   \/**< UPC-A *\/$/;"	e	enum:zebra::zebra_symbol_type_e
+ZEBRA_UPCE	zebra.h	/^    ZEBRA_UPCE        =      9,   \/**< UPC-E *\/$/;"	e	enum:zebra::zebra_symbol_type_e
+ZEBRA_VERSION_MAJOR	config.h	153;"	d
+ZEBRA_VERSION_MINOR	config.h	156;"	d
+_DECODER_H_	decoder.h	24;"	d
+_EAN_H_	ean.h	24;"	d
+_ERROR_H_	error.h	24;"	d
+_IMAGE_H_	image.h	24;"	d
+_SYMBOL_H_	symbol.h	24;"	d
+_UINT32_T	config.h	161;"	d
+_UINT8_T	config.h	166;"	d
+_ZEBRA_H_	zebra.h	24;"	d
+__func__	debug.h	64;"	d
+__func__	debug.h	66;"	d
+__func__	error.h	40;"	d
+__func__	error.h	42;"	d
+_zebra_decode_ean	ean.c	/^zebra_symbol_type_t _zebra_decode_ean (zebra_decoder_t *dcode)$/;"	f
+_zebra_decoder_buf_dump	decoder.c	/^const char *_zebra_decoder_buf_dump (unsigned char *buf,$/;"	f
+_zebra_error_spew	error.c	/^int _zebra_error_spew (const void *container,$/;"	f
+_zebra_error_string	error.c	/^const char *_zebra_error_string (const void *container,$/;"	f
+_zebra_get_error_code	error.c	/^zebra_error_t _zebra_get_error_code (const void *container)$/;"	f
+_zebra_image_refcnt	image.h	/^static inline void _zebra_image_refcnt (zebra_image_t *img,$/;"	f
+_zebra_verbosity	error.c	/^int _zebra_verbosity = 0;$/;"	v
+addon	ean.h	/^    zebra_symbol_type_t addon;$/;"	m	struct:ean_decoder_s
+addr	leanXip.c	/^struct  sockaddr_in addr;$/;"	v	typeref:struct:sockaddr_in
+alloc_sym	img_scanner.c	/^static inline zebra_symbol_t *alloc_sym (zebra_image_scanner_t *iscn,$/;"	f	file:
+arg_int	error.h	/^    int arg_int;                \/* single integer argument *\/$/;"	m	struct:errinfo_s
+arg_str	error.h	/^    char *arg_str;              \/* single string argument *\/$/;"	m	struct:errinfo_s
+ask	configure	/^ask() {$/;"	f
+aux_end	ean.c	/^static inline signed char aux_end (zebra_decoder_t *dcode,$/;"	f	file:
+aux_start	ean.c	/^static inline signed char aux_start (zebra_decoder_t *dcode)$/;"	f	file:
+blob	leanXoverlay.c	/^void blob(struct OSC_PICTURE *pPic, int x, int y, int size, unsigned char color) $/;"	f
+blue	image.h	/^            uint8_t red, green, blue;   \/* size\/location a la RGB_BITS() *\/$/;"	m	struct:zebra_format_def_s::__anon1::__anon2
+bpp	image.h	/^            uint8_t bpp;                \/* bits per pixel *\/$/;"	m	struct:zebra_format_def_s::__anon1::__anon2
+buf	decoder.h	/^    unsigned char *buf;                 \/* decoded characters *\/$/;"	m	struct:zebra_decoder_s
+buf	ean.h	/^    signed char buf[18];        \/* holding buffer *\/$/;"	m	struct:ean_decoder_s
+buf	error.h	/^    char *buf;                  \/* formatted and passed to application *\/$/;"	m	struct:errinfo_s
+buflen	decoder.h	/^    unsigned buflen;                    \/* dynamic buffer allocation *\/$/;"	m	struct:zebra_decoder_s
+cache	img_scanner.c	/^    zebra_symbol_t *cache;      \/* inter-image result cache entries *\/$/;"	m	struct:zebra_image_scanner_s	file:
+cache_count	symbol.h	/^    int cache_count;            \/* cache state *\/$/;"	m	struct:zebra_symbol_s
+cache_lookup	img_scanner.c	/^static inline zebra_symbol_t *cache_lookup (zebra_image_scanner_t *iscn,$/;"	f	file:
+calc_s	decoder.h	/^static inline unsigned calc_s (const zebra_decoder_t *dcode,$/;"	f
+calc_thresh	scanner.c	/^static inline unsigned calc_thresh (zebra_scanner_t *scn)$/;"	f	file:
+cleanup	image.h	/^    zebra_image_cleanup_handler_t *cleanup;$/;"	m	struct:zebra_image_s
+cleanupSystem	leanXmain.c	/^void cleanupSystem(struct SYSTEM *s)$/;"	f
+client	leanXip.c	/^struct client {$/;"	s	file:
+clients	leanXip.c	/^struct  client clients[MAX_CLI];$/;"	v	typeref:struct:client
+cmp	image.h	/^        uint32_t cmp;                   \/* quick compare equivalent formats *\/$/;"	m	union:zebra_format_def_s::__anon1
+code128	decoder.h	/^    code128_decoder_t code128;          \/* Code 128 decode state *\/$/;"	m	struct:zebra_decoder_s
+code39	decoder.h	/^    code39_decoder_t code39;            \/* Code 39 decode state *\/$/;"	m	struct:zebra_decoder_s
+const	config.h	169;"	d
+cur_edge	scanner.c	/^    unsigned cur_edge;      \/* interpolated position of tracking edge *\/$/;"	m	struct:zebra_scanner_s	file:
+data	image.h	/^    const void *data;           \/* image sample data *\/$/;"	m	struct:zebra_image_s
+data	leanXip.c	/^char	data[DATABUF];	$/;"	v
+data	leanXtools.h	/^	char *data;$/;"	m	struct:ringbuf
+data	symbol.h	/^    char *data;                 \/* ascii symbol data *\/$/;"	m	struct:zebra_symbol_s
+datalen	image.h	/^    unsigned long datalen;      \/* allocated\/mapped size of data *\/$/;"	m	struct:zebra_image_s
+datalen	symbol.h	/^    unsigned int datalen;       \/* allocation size of data *\/$/;"	m	struct:zebra_symbol_s
+dcode	img_scanner.c	/^    zebra_decoder_t *dcode;     \/* associated symbol decoder *\/$/;"	m	struct:zebra_image_scanner_s	file:
+debug_buf	ean.c	/^static unsigned char debug_buf[0x18];$/;"	v	file:
+decode4	ean.c	/^static inline signed char decode4 (zebra_decoder_t *dcode)$/;"	f	file:
+decode_e	decoder.h	/^static inline int decode_e (unsigned e,$/;"	f
+decode_pass	ean.c	/^static inline zebra_symbol_type_t decode_pass (zebra_decoder_t *dcode,$/;"	f	file:
+decoder	scanner.c	/^    zebra_decoder_t *decoder; \/* associated bar width decoder *\/$/;"	m	struct:zebra_scanner_s	file:
+decoder_dump	decoder.c	/^static char *decoder_dump = NULL;$/;"	v	file:
+deps	leanXmain.c	/^struct OSC_DEPENDENCY deps[] = {$/;"	v	typeref:struct:OSC_DEPENDENCY
+detail	error.h	/^    const char *detail;         \/* description *\/$/;"	m	struct:errinfo_s
+digits	ean.c	/^static const unsigned char digits[] = {  \/* E1   E2 *\/$/;"	v	file:
+doubleBufferIDs	leanXmain.c	/^	uint8 doubleBufferIDs[2]; \/* The frame buffer IDs of the frame$/;"	m	struct:SYSTEM	file:
+dprintf	debug.h	30;"	d
+dprintf	debug.h	33;"	d
+dprintf	debug.h	41;"	d
+dprintf	debug.h	45;"	d
+dsprintbuf	ean.c	/^static inline const unsigned char *dsprintbuf(ean_decoder_t *ean)$/;"	f	file:
+dump_buffer	leanXtools.c	/^void dump_buffer(unsigned char *data, int len)$/;"	f
+ean	decoder.h	/^    ean_decoder_t ean;                  \/* EAN\/UPC parallel decode attempts *\/$/;"	m	struct:zebra_decoder_s
+ean13_config	ean.h	/^    unsigned ean13_config;$/;"	m	struct:ean_decoder_s
+ean8_config	ean.h	/^    unsigned ean8_config;$/;"	m	struct:ean_decoder_s
+ean_decoder_s	ean.h	/^typedef struct ean_decoder_s {$/;"	s
+ean_decoder_t	ean.h	/^} ean_decoder_t;$/;"	t	typeref:struct:ean_decoder_s
+ean_expand_upce	ean.c	/^static inline void ean_expand_upce (ean_decoder_t *ean,$/;"	f	file:
+ean_get_config	ean.h	/^static inline unsigned ean_get_config (ean_decoder_t *ean,$/;"	f
+ean_new_scan	ean.h	/^static inline void ean_new_scan (ean_decoder_t *ean)$/;"	f
+ean_part_end4	ean.c	/^static inline zebra_symbol_type_t ean_part_end4 (ean_pass_t *pass,$/;"	f	file:
+ean_part_end7	ean.c	/^static inline zebra_symbol_type_t ean_part_end7 (ean_decoder_t *ean,$/;"	f	file:
+ean_pass_s	ean.h	/^typedef struct ean_pass_s {$/;"	s
+ean_pass_t	ean.h	/^} ean_pass_t;$/;"	t	typeref:struct:ean_pass_s
+ean_reset	ean.h	/^static inline void ean_reset (ean_decoder_t *ean)$/;"	f
+ean_verify_checksum	ean.c	/^static inline signed char ean_verify_checksum (ean_decoder_t *ean,$/;"	f	file:
+enable	ean.h	/^    signed char enable;$/;"	m	struct:ean_decoder_s
+enable_cache	img_scanner.c	/^    int enable_cache;           \/* current result cache state *\/$/;"	m	struct:zebra_image_scanner_s	file:
+err_capture	error.h	/^static inline int err_capture (const void *container,$/;"	f
+err_capture_int	error.h	/^static inline int err_capture_int (const void *container,$/;"	f
+err_capture_num	error.h	/^static inline int err_capture_num (const void *container,$/;"	f
+err_capture_str	error.h	/^static inline int err_capture_str (const void *container,$/;"	f
+err_cleanup	error.h	/^static inline void err_cleanup (errinfo_t *err)$/;"	f
+err_copy	error.h	/^static inline int err_copy (void *dst_c,$/;"	f
+err_init	error.h	/^static inline void err_init (errinfo_t *err,$/;"	f
+err_str	error.c	/^static const char const * err_str[] = {$/;"	v	file:
+errinfo_s	error.h	/^typedef struct errinfo_s {$/;"	s
+errinfo_t	error.h	/^} errinfo_t;$/;"	t	typeref:struct:errinfo_s
+errmodule_e	error.h	/^typedef enum errmodule_e {$/;"	g
+errmodule_t	error.h	/^} errmodule_t;$/;"	t	typeref:enum:errmodule_e
+errnum	error.h	/^    int errnum;                 \/* errno for system errors *\/$/;"	m	struct:errinfo_s
+errsev_e	error.h	/^typedef enum errsev_e {$/;"	g
+errsev_t	error.h	/^} errsev_t;$/;"	t	typeref:enum:errsev_e
+fastdebayerBGR	leanXalgos.c	/^int fastdebayerBGR(const struct OSC_PICTURE pRaw, $/;"	f
+fastdebayerChromU	leanXalgos.c	/^int fastdebayerChromU(const struct OSC_PICTURE pRaw, $/;"	f
+fastdebayerChromV	leanXalgos.c	/^int fastdebayerChromV(const struct OSC_PICTURE pRaw, $/;"	f
+fastdebayerRGB	leanXalgos.c	/^int fastdebayerRGB(const struct OSC_PICTURE pRaw, $/;"	f
+fastdebayerYUV422	leanXalgos.c	/^int fastdebayerYUV422(const struct OSC_PICTURE pRaw, $/;"	f
+fastdebayerYUV444	leanXalgos.c	/^int fastdebayerYUV444(const struct OSC_PICTURE pRaw, $/;"	f
+fastgrey	leanXalgos.c	/^int fastgrey(   const struct OSC_PICTURE pRaw, $/;"	f
+fatalerror	leanXtools.c	/^void fatalerror(char *strFormat, ...)$/;"	f
+fix_readpointer	leanXip.c	/^void fix_readpointer() {$/;"	f
+format	image.c	/^    uint32_t magic, format;$/;"	m	struct:zimg_hdr_s	file:
+format	image.h	/^    uint32_t format;                    \/* fourcc *\/$/;"	m	struct:zebra_format_def_s
+format	image.h	/^    uint32_t format;            \/* fourcc image format code *\/$/;"	m	struct:zebra_image_s
+fourcc	image.h	37;"	d
+frameBuffer1	leanXmain.c	/^	uint8 frameBuffer1[OSC_CAM_MAX_IMAGE_WIDTH * OSC_CAM_MAX_IMAGE_HEIGHT]; $/;"	m	struct:SYSTEM	file:
+frameBuffer2	leanXmain.c	/^	uint8 frameBuffer2[OSC_CAM_MAX_IMAGE_WIDTH * OSC_CAM_MAX_IMAGE_HEIGHT];$/;"	m	struct:SYSTEM	file:
+func	error.h	/^    const char *func;           \/* reporting function *\/$/;"	m	struct:errinfo_s
+gen	image.h	/^        uint8_t gen[4];                 \/* raw bytes *\/$/;"	m	union:zebra_format_def_s::__anon1
+get_color	decoder.h	/^static inline char get_color (const zebra_decoder_t *dcode)$/;"	f
+get_config	configure	/^get_config() {$/;"	f
+get_lock	decoder.h	/^static inline char get_lock (zebra_decoder_t *dcode)$/;"	f
+get_width	decoder.h	/^static inline unsigned get_width (const zebra_decoder_t *dcode,$/;"	f
+green	image.h	/^            uint8_t red, green, blue;   \/* size\/location a la RGB_BITS() *\/$/;"	m	struct:zebra_format_def_s::__anon1::__anon2
+group	image.h	/^    zebra_format_group_t group;         \/* coarse categorization *\/$/;"	m	struct:zebra_format_def_s
+growbuf	symbol.c	/^static inline void growbuf (unsigned **buf,$/;"	f	file:
+hFileNameReader	leanXmain.c	/^	void *hFileNameReader;$/;"	m	struct:SYSTEM	file:
+hFramework	leanXmain.c	/^	void *hFramework;$/;"	m	struct:SYSTEM	file:
+handler	decoder.h	/^    zebra_decoder_handler_t *handler;   \/* application callback *\/$/;"	m	struct:zebra_decoder_s
+handler	img_scanner.c	/^    zebra_image_data_handler_t *handler;$/;"	m	struct:zebra_image_scanner_s	file:
+height	image.c	/^    uint16_t width, height;$/;"	m	struct:zimg_hdr_s	file:
+height	image.h	/^    unsigned width, height;     \/* image size *\/$/;"	m	struct:zebra_image_s
+i	leanXtools.c	/^	int i;$/;"	m	struct:listtest	file:
+i25	decoder.h	/^    i25_decoder_t i25;                  \/* Interleaved 2 of 5 decode state *\/$/;"	m	struct:zebra_decoder_s
+idx	decoder.h	/^    unsigned char idx;                  \/* current width index *\/$/;"	m	struct:zebra_decoder_s
+img	img_scanner.c	/^    zebra_image_t *img;         \/* currently scanning image *root* *\/$/;"	m	struct:zebra_image_scanner_s	file:
+initSystem	leanXmain.c	/^void initSystem(struct SYSTEM *s)$/;"	f
+inline	config.h	174;"	d
+int32_t	config.h	179;"	d
+integrate_partial	ean.c	/^static inline zebra_symbol_type_t integrate_partial (ean_decoder_t *ean,$/;"	f	file:
+ip_cli_connect	leanXip.c	/^void ip_cli_connect() $/;"	f
+ip_cli_disconnect	leanXip.c	/^void ip_cli_disconnect(int client) $/;"	f
+ip_do_work	leanXip.c	/^void ip_do_work()$/;"	f
+ip_read	leanXip.c	/^void ip_read(int client)$/;"	f
+ip_send_all	leanXip.c	/^int ip_send_all(char *buf, int len)$/;"	f
+ip_sendtest	leanXip.c	/^uint32 ip_sendtest() $/;"	f
+ip_start_server	leanXip.c	/^int ip_start_server()$/;"	f
+ip_stop_server	leanXip.c	/^int ip_stop_server()$/;"	f
+ip_test	leanXip.c	/^void ip_test() {$/;"	f
+isbn10_calc_checksum	ean.c	/^static inline unsigned char isbn10_calc_checksum (ean_decoder_t *ean)$/;"	f	file:
+isbn10_config	ean.h	/^    unsigned isbn10_config;$/;"	m	struct:ean_decoder_s
+isbn13_config	ean.h	/^    unsigned isbn13_config;$/;"	m	struct:ean_decoder_s
+l	leanXtools.c	/^	struct list l; \/* Has to be on top of the structure *\/$/;"	m	struct:listtest	typeref:struct:listtest::list	file:
+last_edge	scanner.c	/^    unsigned last_edge;     \/* interpolated position of last located edge *\/$/;"	m	struct:zebra_scanner_s	file:
+left	ean.h	/^    zebra_symbol_type_t left;   \/* current holding buffer contents *\/$/;"	m	struct:ean_decoder_s
+list	leanXtools.h	/^struct list {$/;"	s
+list_del	leanXtools.c	/^void list_del(struct list **head, struct list *item) {$/;"	f
+list_ins	leanXtools.c	/^void list_ins(struct list **head, struct list *item) {$/;"	f
+list_test	leanXtools.c	/^void list_test() $/;"	f
+listtest	leanXtools.c	/^struct listtest {$/;"	s	file:
+lock	decoder.h	/^    unsigned lock : 1;                  \/* buffer lock *\/$/;"	m	struct:zebra_decoder_s
+magic	error.h	/^    uint32_t magic;             \/* just in case *\/$/;"	m	struct:errinfo_s
+magic	image.c	/^    uint32_t magic, format;$/;"	m	struct:zimg_hdr_s	file:
+main	leanXmain.c	/^int main(const int argc, const char * argv[])$/;"	f
+max	leanXtools.h	26;"	d
+mean	leanXalgos.h	/^	unsigned char mean;$/;"	m	struct:ImgStats
+min	leanXtools.h	25;"	d
+mod_str	error.c	/^static const char * const mod_str[] = {$/;"	v	file:
+module	error.h	/^    errmodule_t module;         \/* reporting module *\/$/;"	m	struct:errinfo_s
+movedelta	img_scanner.c	312;"	d	file:
+next	image.h	/^    zebra_image_t *next;        \/* internal image lists *\/$/;"	m	struct:zebra_image_s
+next	leanXtools.h	/^	struct list *next; \/* Has to be on top of the structures *\/$/;"	m	struct:list	typeref:struct:list::list
+next	symbol.h	/^    zebra_symbol_t *next;       \/* linked list of results *\/$/;"	m	struct:zebra_symbol_s
+npts	symbol.h	/^    unsigned npts;              \/* number of points in location polygon *\/$/;"	m	struct:zebra_symbol_s
+nsyms	image.h	/^    int nsyms;                  \/* number of valid symbols *\/$/;"	m	struct:zebra_image_s
+nsyms	img_scanner.c	/^    int nsyms;                  \/* total cached symbols *\/$/;"	m	struct:zebra_image_scanner_s	file:
+ov_numbers	leanXoverlay.h	/^static unsigned char ov_numbers[10][60] = {$/;"	v
+ov_numbers1	leanXoverlay.h	/^static unsigned char ov_numbers1[] = {0,1,2,3};$/;"	v
+overlay	leanXoverlay.c	/^void overlay(struct OSC_PICTURE *pPic, int x, int y, int size, char *text) $/;"	f
+p	image.h	/^    } p;$/;"	m	struct:zebra_format_def_s	typeref:union:zebra_format_def_s::__anon1
+packorder	image.h	/^            uint8_t packorder;          \/* channel ordering flags$/;"	m	struct:zebra_format_def_s::__anon1::__anon3
+pair_width	decoder.h	/^static inline unsigned pair_width (const zebra_decoder_t *dcode,$/;"	f
+parity_decode	ean.c	/^static const unsigned char parity_decode[] = {$/;"	v	file:
+pass	ean.h	/^    ean_pass_t pass[4];         \/* state of each parallel decode attempt *\/$/;"	m	struct:ean_decoder_s
+pdf417	decoder.h	/^    pdf417_decoder_t pdf417;            \/* PDF417 decode state *\/$/;"	m	struct:zebra_decoder_s
+point_s	symbol.h	/^typedef struct point_s {$/;"	s
+point_t	symbol.h	/^} point_t;$/;"	t	typeref:struct:point_s
+postprocess	ean.c	/^static inline void postprocess (zebra_decoder_t *dcode,$/;"	f	file:
+print_checksum	leanXtools.c	/^void print_checksum(unsigned char *data, int len, char *string)$/;"	f
+process_edge	scanner.c	/^static inline zebra_symbol_type_t process_edge (zebra_scanner_t *scn,$/;"	f	file:
+pts	symbol.h	/^    point_t *pts;               \/* list of points in location polygon *\/$/;"	m	struct:zebra_symbol_s
+ptslen	symbol.h	/^    unsigned ptslen;            \/* allocation size of pts *\/$/;"	m	struct:zebra_symbol_s
+quiet_border	img_scanner.c	/^static inline void quiet_border (zebra_image_scanner_t *iscn,$/;"	f	file:
+r_ptr	leanXip.c	/^	char *r_ptr; \/* This client got all the data from wbuf up to this ptr *\/$/;"	m	struct:client	file:
+r_ptr	leanXtools.h	/^	char *r_ptr;$/;"	m	struct:ringbuf
+raw	ean.h	/^    unsigned char raw[7];       \/* decode in process *\/$/;"	m	struct:ean_pass_s
+read_config	configure	/^read_config() {$/;"	f
+recycle_syms	img_scanner.c	/^static inline void recycle_syms (zebra_image_scanner_t *iscn,$/;"	f	file:
+red	image.h	/^            uint8_t red, green, blue;   \/* size\/location a la RGB_BITS() *\/$/;"	m	struct:zebra_format_def_s::__anon1::__anon2
+refcnt	image.h	/^    int refcnt;                 \/* reference count *\/$/;"	m	struct:zebra_image_s
+rgb	image.h	/^        } rgb;$/;"	m	union:zebra_format_def_s::__anon1	typeref:struct:zebra_format_def_s::__anon1::__anon2
+right	ean.h	/^    zebra_symbol_type_t right;$/;"	m	struct:ean_decoder_s
+ring_addtoptr	leanXtools.c	/^void ring_addtoptr(struct ringbuf *buf, char **ptr, unsigned int len) $/;"	f
+ring_datalen	leanXtools.c	/^int ring_datalen(struct ringbuf *buf) $/;"	f
+ring_debug	leanXtools.c	/^void ring_debug(struct ringbuf *buf)$/;"	f
+ring_free	leanXtools.c	/^int ring_free(struct ringbuf *buf) $/;"	f
+ring_init	leanXtools.c	/^void ring_init(struct ringbuf *buf, int len)$/;"	f
+ring_peek	leanXtools.c	/^int ring_peek(struct ringbuf *buf, char *data, int maxlen)$/;"	f
+ring_peekfrom	leanXtools.c	/^int ring_peekfrom(struct ringbuf *buf, char *r_ptr, char *data, int maxlen)$/;"	f
+ring_read	leanXtools.c	/^int ring_read(struct ringbuf *buf, char *data, int maxlen)$/;"	f
+ring_subfromptr	leanXtools.c	/^void ring_subfromptr(struct ringbuf *buf, char **ptr, unsigned int len)$/;"	f
+ring_test	leanXtools.c	/^void ring_test() {$/;"	f
+ring_write	leanXtools.c	/^int ring_write(struct ringbuf *buf, char *data, int len) $/;"	f
+ringbuf	leanXtools.h	/^struct ringbuf {$/;"	s
+s4	ean.h	/^    unsigned s4;                \/* character width *\/$/;"	m	struct:ean_decoder_s
+scn	img_scanner.c	/^    zebra_scanner_t *scn;       \/* associated linear intensity scanner *\/$/;"	m	struct:zebra_image_scanner_s	file:
+select_readable	leanXip.c	/^bool select_readable(int fd)$/;"	f
+select_writeable	leanXip.c	/^bool select_writeable(int fd)$/;"	f
+seq	image.h	/^    unsigned seq;               \/* page\/frame sequence number *\/$/;"	m	struct:zebra_image_s
+sev	error.h	/^    errsev_t sev;$/;"	m	struct:errinfo_s
+sev_str	error.c	/^static const char * const sev_str[] = {$/;"	v	file:
+shutterWidth	leanXmain.c	/^	int32 shutterWidth; \/* Microseconds *\/$/;"	m	struct:SYSTEM	file:
+size	image.c	/^    uint32_t size;$/;"	m	struct:zimg_hdr_s	file:
+size	leanXtools.h	/^	int  size;$/;"	m	struct:ringbuf
+size_buf	decoder.h	/^static inline char size_buf (zebra_decoder_t *dcode,$/;"	f
+sock	leanXip.c	/^	int sock;$/;"	m	struct:client	file:
+src	image.h	/^    zebra_video_t *src;         \/* originator *\/$/;"	m	struct:zebra_image_s
+srcidx	image.h	/^    int srcidx;                 \/* index used by originator *\/$/;"	m	struct:zebra_image_s
+srv_sock	leanXip.c	/^int	srv_sock;$/;"	v
+state	ean.h	/^    signed char state;          \/* module position of w[idx] in symbol *\/$/;"	m	struct:ean_pass_s
+sym_add_point	symbol.h	/^static inline void sym_add_point (zebra_symbol_t *sym,$/;"	f
+sym_destroy	symbol.h	/^static inline void sym_destroy (zebra_symbol_t *sym)$/;"	f
+symbol_handler	img_scanner.c	/^static void symbol_handler (zebra_image_scanner_t *iscn,$/;"	f	file:
+symbol_partial_e	ean.c	/^typedef enum symbol_partial_e {$/;"	g	file:
+symbol_partial_t	ean.c	/^} symbol_partial_t;$/;"	t	typeref:enum:symbol_partial_e	file:
+syms	image.h	/^    zebra_symbol_t *syms;       \/* first of decoded symbol results *\/$/;"	m	struct:zebra_image_s
+syms	img_scanner.c	/^    zebra_symbol_t *syms;       \/* recycled symbols *\/$/;"	m	struct:zebra_image_scanner_s	file:
+sys	leanXmain.c	/^} sys;$/;"	v	typeref:struct:SYSTEM
+time	symbol.h	/^    unsigned long time;         \/* relative symbol capture time *\/$/;"	m	struct:zebra_symbol_s
+trim	configure	/^trim() {$/;"	f
+type	decoder.h	/^    zebra_symbol_type_t type;           \/* type of last decoded data *\/$/;"	m	struct:zebra_decoder_s
+type	error.h	/^    zebra_error_t type;$/;"	m	struct:errinfo_s
+type	symbol.h	/^    zebra_symbol_type_t type;   \/* symbol type *\/$/;"	m	struct:zebra_symbol_s
+uint16_t	config.h	188;"	d
+uint32_t	config.h	183;"	d
+uint8_t	config.h	187;"	d
+uintptr_t	config.h	192;"	d
+upca_config	ean.h	/^    unsigned upca_config;$/;"	m	struct:ean_decoder_s
+upce_config	ean.h	/^    unsigned upce_config;$/;"	m	struct:ean_decoder_s
+userdata	decoder.h	/^    void *userdata;                     \/* application data *\/$/;"	m	struct:zebra_decoder_s
+userdata	image.h	/^    void *userdata;             \/* user specified data associated w\/image *\/$/;"	m	struct:zebra_image_s
+userdata	img_scanner.c	/^    const void *userdata;       \/* application data *\/$/;"	m	struct:zebra_image_scanner_s	file:
+w	decoder.h	/^    unsigned w[DECODE_WINDOW];          \/* window of last N bar widths *\/$/;"	m	struct:zebra_decoder_s
+w_ptr	leanXtools.h	/^	char *w_ptr;$/;"	m	struct:ringbuf
+wbuf	leanXip.c	/^struct ringbuf wbuf;$/;"	v	typeref:struct:ringbuf
+width	image.c	/^    uint16_t width, height;$/;"	m	struct:zimg_hdr_s	file:
+width	image.h	/^    unsigned width, height;     \/* image size *\/$/;"	m	struct:zebra_image_s
+width	scanner.c	/^    unsigned width;         \/* last element width *\/$/;"	m	struct:zebra_scanner_s	file:
+x	scanner.c	/^    unsigned x;             \/* relative scan position of next sample *\/$/;"	m	struct:zebra_scanner_s	file:
+x	symbol.h	/^    int x, y;$/;"	m	struct:point_s
+xmlfmt	symbol.c	/^static const char *xmlfmt[] = {$/;"	v	file:
+xsub2	image.h	/^            uint8_t xsub2, ysub2;       \/* chroma subsampling in each axis *\/$/;"	m	struct:zebra_format_def_s::__anon1::__anon3
+y	symbol.h	/^    int x, y;$/;"	m	struct:point_s
+y0	scanner.c	/^    int y0[4];              \/* short circular buffer of average intensities *\/$/;"	m	struct:zebra_scanner_s	file:
+y1_min_thresh	scanner.c	/^    unsigned y1_min_thresh; \/* minimum threshold *\/$/;"	m	struct:zebra_scanner_s	file:
+y1_sign	scanner.c	/^    int y1_sign;            \/* slope at last crossing *\/$/;"	m	struct:zebra_scanner_s	file:
+y1_thresh	scanner.c	/^    unsigned y1_thresh;     \/* current slope threshold *\/$/;"	m	struct:zebra_scanner_s	file:
+ysub2	image.h	/^            uint8_t xsub2, ysub2;       \/* chroma subsampling in each axis *\/$/;"	m	struct:zebra_format_def_s::__anon1::__anon3
+yuv	image.h	/^        } yuv;$/;"	m	union:zebra_format_def_s::__anon1	typeref:struct:zebra_format_def_s::__anon1::__anon3
+zassert	debug.h	70;"	d
+zassert	debug.h	82;"	d
+zebra	zebra.h	/^namespace zebra {$/;"	n
+zebra_color_e	zebra.h	/^typedef enum zebra_color_e {$/;"	g
+zebra_color_t	zebra.h	/^} zebra_color_t;$/;"	t	typeref:enum:zebra::zebra_color_e
+zebra_config_e	zebra.h	/^typedef enum zebra_config_e {$/;"	g
+zebra_config_t	zebra.h	/^} zebra_config_t;$/;"	t	typeref:enum:zebra::zebra_config_e
+zebra_decode_width	decoder.c	/^zebra_symbol_type_t zebra_decode_width (zebra_decoder_t *dcode,$/;"	f
+zebra_decoder_create	decoder.c	/^zebra_decoder_t *zebra_decoder_create ()$/;"	f
+zebra_decoder_destroy	decoder.c	/^void zebra_decoder_destroy (zebra_decoder_t *dcode)$/;"	f
+zebra_decoder_get_color	decoder.c	/^zebra_color_t zebra_decoder_get_color (const zebra_decoder_t *dcode)$/;"	f
+zebra_decoder_get_data	decoder.c	/^const char *zebra_decoder_get_data (const zebra_decoder_t *dcode)$/;"	f
+zebra_decoder_get_type	decoder.c	/^zebra_symbol_type_t zebra_decoder_get_type (const zebra_decoder_t *dcode)$/;"	f
+zebra_decoder_get_userdata	decoder.c	/^void *zebra_decoder_get_userdata (const zebra_decoder_t *dcode)$/;"	f
+zebra_decoder_handler_t	zebra.h	/^typedef void (zebra_decoder_handler_t)(zebra_decoder_t *decoder);$/;"	t
+zebra_decoder_new_scan	decoder.c	/^void zebra_decoder_new_scan (zebra_decoder_t *dcode)$/;"	f
+zebra_decoder_parse_config	zebra.h	/^static inline int zebra_decoder_parse_config (zebra_decoder_t *decoder,$/;"	f
+zebra_decoder_reset	decoder.c	/^void zebra_decoder_reset (zebra_decoder_t *dcode)$/;"	f
+zebra_decoder_s	decoder.h	/^struct zebra_decoder_s {$/;"	s
+zebra_decoder_set_config	decoder.c	/^int zebra_decoder_set_config (zebra_decoder_t *dcode,$/;"	f
+zebra_decoder_set_handler	decoder.c	/^zebra_decoder_set_handler (zebra_decoder_t *dcode,$/;"	f
+zebra_decoder_set_userdata	decoder.c	/^void zebra_decoder_set_userdata (zebra_decoder_t *dcode,$/;"	f
+zebra_decoder_t	zebra.h	/^typedef struct zebra_decoder_s zebra_decoder_t;$/;"	t	typeref:struct:zebra::zebra_decoder_s
+zebra_error_e	zebra.h	/^typedef enum zebra_error_e {$/;"	g
+zebra_error_t	zebra.h	/^} zebra_error_t;$/;"	t	typeref:enum:zebra::zebra_error_e
+zebra_format_def_s	image.h	/^typedef struct zebra_format_def_s {$/;"	s
+zebra_format_def_t	image.h	/^} zebra_format_def_t;$/;"	t	typeref:struct:zebra_format_def_s
+zebra_format_group_e	image.h	/^typedef enum zebra_format_group_e {$/;"	g
+zebra_format_group_t	image.h	/^} zebra_format_group_t;$/;"	t	typeref:enum:zebra_format_group_e
+zebra_get_addon_name	symbol.c	/^const char *zebra_get_addon_name (zebra_symbol_type_t sym)$/;"	f
+zebra_get_symbol_name	symbol.c	/^const char *zebra_get_symbol_name (zebra_symbol_type_t sym)$/;"	f
+zebra_image_cleanup_handler_t	zebra.h	/^typedef void (zebra_image_cleanup_handler_t)(zebra_image_t *image);$/;"	t
+zebra_image_copy	image.c	/^zebra_image_t *zebra_image_copy (const zebra_image_t *src)$/;"	f
+zebra_image_create	image.c	/^zebra_image_t *zebra_image_create ()$/;"	f
+zebra_image_data_handler_t	zebra.h	/^typedef void (zebra_image_data_handler_t)(zebra_image_t *image,$/;"	t
+zebra_image_destroy	image.c	/^void zebra_image_destroy (zebra_image_t *img)$/;"	f
+zebra_image_first_symbol	image.c	/^const zebra_symbol_t *zebra_image_first_symbol (const zebra_image_t *img)$/;"	f
+zebra_image_free_data	image.c	/^inline void zebra_image_free_data (zebra_image_t *img)$/;"	f
+zebra_image_get_data	image.c	/^const void *zebra_image_get_data (const zebra_image_t *img)$/;"	f
+zebra_image_get_data_length	image.c	/^unsigned long zebra_image_get_data_length (const zebra_image_t *img)$/;"	f
+zebra_image_get_format	image.c	/^unsigned long zebra_image_get_format (const zebra_image_t *img)$/;"	f
+zebra_image_get_height	image.c	/^unsigned zebra_image_get_height (const zebra_image_t *img)$/;"	f
+zebra_image_get_sequence	image.c	/^unsigned zebra_image_get_sequence (const zebra_image_t *img)$/;"	f
+zebra_image_get_userdata	image.c	/^void *zebra_image_get_userdata (const zebra_image_t *img)$/;"	f
+zebra_image_get_width	image.c	/^unsigned zebra_image_get_width (const zebra_image_t *img)$/;"	f
+zebra_image_ref	image.c	/^void zebra_image_ref (zebra_image_t *img,$/;"	f
+zebra_image_s	image.h	/^struct zebra_image_s {$/;"	s
+zebra_image_scanner_create	img_scanner.c	/^zebra_image_scanner_t *zebra_image_scanner_create ()$/;"	f
+zebra_image_scanner_destroy	img_scanner.c	/^void zebra_image_scanner_destroy (zebra_image_scanner_t *iscn)$/;"	f
+zebra_image_scanner_enable_cache	img_scanner.c	/^void zebra_image_scanner_enable_cache(zebra_image_scanner_t *iscn,$/;"	f
+zebra_image_scanner_parse_config	zebra.h	/^zebra_image_scanner_parse_config (zebra_image_scanner_t *scanner,$/;"	f
+zebra_image_scanner_s	img_scanner.c	/^struct zebra_image_scanner_s {$/;"	s	file:
+zebra_image_scanner_set_config	img_scanner.c	/^int zebra_image_scanner_set_config (zebra_image_scanner_t *iscn,$/;"	f
+zebra_image_scanner_set_data_handler	img_scanner.c	/^zebra_image_scanner_set_data_handler (zebra_image_scanner_t *iscn,$/;"	f
+zebra_image_scanner_t	zebra.h	/^typedef struct zebra_image_scanner_s zebra_image_scanner_t;$/;"	t	typeref:struct:zebra::zebra_image_scanner_s
+zebra_image_set_data	image.c	/^void zebra_image_set_data (zebra_image_t *img,$/;"	f
+zebra_image_set_format	image.c	/^void zebra_image_set_format (zebra_image_t *img,$/;"	f
+zebra_image_set_sequence	image.c	/^void zebra_image_set_sequence (zebra_image_t *img,$/;"	f
+zebra_image_set_size	image.c	/^void zebra_image_set_size (zebra_image_t *img,$/;"	f
+zebra_image_set_userdata	image.c	/^void zebra_image_set_userdata (zebra_image_t *img,$/;"	f
+zebra_image_t	zebra.h	/^typedef struct zebra_image_s zebra_image_t;$/;"	t	typeref:struct:zebra::zebra_image_s
+zebra_image_write	image.c	/^int zebra_image_write (const zebra_image_t *img,$/;"	f
+zebra_increase_verbosity	error.c	/^void zebra_increase_verbosity ()$/;"	f
+zebra_parse_config	config.c	/^int zebra_parse_config (const char *cfgstr,$/;"	f
+zebra_processor_error_spew	zebra.h	/^zebra_processor_error_spew (const zebra_processor_t *processor,$/;"	f
+zebra_processor_error_string	zebra.h	/^zebra_processor_error_string (const zebra_processor_t *processor,$/;"	f
+zebra_processor_get_error_code	zebra.h	/^zebra_processor_get_error_code (const zebra_processor_t *processor)$/;"	f
+zebra_processor_parse_config	zebra.h	/^static inline int zebra_processor_parse_config (zebra_processor_t *processor,$/;"	f
+zebra_processor_t	zebra.h	/^typedef struct zebra_processor_s zebra_processor_t;$/;"	t	typeref:struct:zebra::zebra_processor_s
+zebra_scan_image	img_scanner.c	/^int zebra_scan_image (zebra_image_scanner_t *iscn,$/;"	f
+zebra_scan_rgb24	zebra.h	/^static inline zebra_symbol_type_t zebra_scan_rgb24 (zebra_scanner_t *scanner,$/;"	f
+zebra_scan_y	scanner.c	/^zebra_symbol_type_t zebra_scan_y (zebra_scanner_t *scn,$/;"	f
+zebra_scanner_create	scanner.c	/^zebra_scanner_t *zebra_scanner_create (zebra_decoder_t *dcode)$/;"	f
+zebra_scanner_destroy	scanner.c	/^void zebra_scanner_destroy (zebra_scanner_t *scn)$/;"	f
+zebra_scanner_get_color	scanner.c	/^zebra_color_t zebra_scanner_get_color (const zebra_scanner_t *scn)$/;"	f
+zebra_scanner_get_state	scanner.c	/^void zebra_scanner_get_state (const zebra_scanner_t *scn,$/;"	f
+zebra_scanner_get_width	scanner.c	/^unsigned zebra_scanner_get_width (const zebra_scanner_t *scn)$/;"	f
+zebra_scanner_new_scan	scanner.c	/^zebra_symbol_type_t zebra_scanner_new_scan (zebra_scanner_t *scn)$/;"	f
+zebra_scanner_reset	scanner.c	/^zebra_symbol_type_t zebra_scanner_reset (zebra_scanner_t *scn)$/;"	f
+zebra_scanner_s	scanner.c	/^struct zebra_scanner_s {$/;"	s	file:
+zebra_scanner_t	zebra.h	/^typedef struct zebra_scanner_s zebra_scanner_t;$/;"	t	typeref:struct:zebra::zebra_scanner_s
+zebra_set_verbosity	error.c	/^void zebra_set_verbosity (int level)$/;"	f
+zebra_symbol_get_count	symbol.c	/^int zebra_symbol_get_count (const zebra_symbol_t *sym)$/;"	f
+zebra_symbol_get_data	symbol.c	/^const char *zebra_symbol_get_data (const zebra_symbol_t *sym)$/;"	f
+zebra_symbol_get_loc_size	symbol.c	/^unsigned zebra_symbol_get_loc_size (const zebra_symbol_t *sym)$/;"	f
+zebra_symbol_get_loc_x	symbol.c	/^int zebra_symbol_get_loc_x (const zebra_symbol_t *sym,$/;"	f
+zebra_symbol_get_loc_y	symbol.c	/^int zebra_symbol_get_loc_y (const zebra_symbol_t *sym,$/;"	f
+zebra_symbol_get_type	symbol.c	/^zebra_symbol_type_t zebra_symbol_get_type (const zebra_symbol_t *sym)$/;"	f
+zebra_symbol_next	symbol.c	/^const zebra_symbol_t *zebra_symbol_next (const zebra_symbol_t *sym)$/;"	f
+zebra_symbol_s	symbol.h	/^struct zebra_symbol_s {$/;"	s
+zebra_symbol_t	zebra.h	/^typedef struct zebra_symbol_s zebra_symbol_t;$/;"	t	typeref:struct:zebra::zebra_symbol_s
+zebra_symbol_type_e	zebra.h	/^typedef enum zebra_symbol_type_e {$/;"	g
+zebra_symbol_type_t	zebra.h	/^} zebra_symbol_type_t;$/;"	t	typeref:enum:zebra::zebra_symbol_type_e
+zebra_symbol_xml	symbol.c	/^char *zebra_symbol_xml (const zebra_symbol_t *sym,$/;"	f
+zebra_version	error.c	/^int zebra_version (unsigned *major,$/;"	f
+zebra_video_error_spew	zebra.h	/^static inline int zebra_video_error_spew (const zebra_video_t *video,$/;"	f
+zebra_video_error_string	zebra.h	/^static inline const char *zebra_video_error_string (const zebra_video_t *video,$/;"	f
+zebra_video_get_error_code	zebra.h	/^zebra_video_get_error_code (const zebra_video_t *video)$/;"	f
+zebra_video_t	zebra.h	/^typedef struct zebra_video_s zebra_video_t;$/;"	t	typeref:struct:zebra::zebra_video_s
+zebra_window_error_spew	zebra.h	/^static inline int zebra_window_error_spew (const zebra_window_t *window,$/;"	f
+zebra_window_error_string	zebra.h	/^zebra_window_error_string (const zebra_window_t *window,$/;"	f
+zebra_window_get_error_code	zebra.h	/^zebra_window_get_error_code (const zebra_window_t *window)$/;"	f
+zebra_window_t	zebra.h	/^typedef struct zebra_window_s zebra_window_t;$/;"	t	typeref:struct:zebra::zebra_window_s
+zimg	leanXmain.c	/^	zebra_image_t *zimg;$/;"	m	struct:SYSTEM	file:
+zimg_hdr_s	image.c	/^typedef struct zimg_hdr_s {$/;"	s	file:
+zimg_hdr_t	image.c	/^} zimg_hdr_t;$/;"	t	typeref:struct:zimg_hdr_s	file:
+zprintf	error.h	82;"	d
+zscan	leanXmain.c	/^	zebra_image_scanner_t *zscan;$/;"	m	struct:SYSTEM	file:
