@@ -8,6 +8,9 @@ cd "`dirname "$P"`" || exit $?
 echo "Killing other instances of the application ..."
 killall app 2> /dev/null
 
+# Deploy the "web interface"
+cp index.html /home/httpd/
+
 # Run the application
 echo "Running the application..."
 ./app
