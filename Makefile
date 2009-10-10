@@ -1,4 +1,4 @@
-# Makefile for basic application template.
+# Makefile for leanXzebra.
 # Copyright (C) 2008 Supercomputing Systems AG
 # 
 # This library is free software; you can redistribute it and/or modify it under
@@ -29,7 +29,7 @@ $(error Please configure the application using './configure' prior to compilatio
 endif
 
 # Name for the application to produce.
-APP_NAME := template
+APP_NAME := leanXzebra
 
 # Binary executables to generate.
 PRODUCTS := app
