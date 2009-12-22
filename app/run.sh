@@ -10,6 +10,8 @@ killall app 2> /dev/null
 
 # Deploy the "web interface"
 cp index.html /home/httpd/
+mkdir -p /home/httpd/imgs
+cp leanXzebra.jpg /home/httpd/imgs/
 
 # Run the application
 echo "Running the application..."
