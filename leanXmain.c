@@ -85,7 +85,7 @@ OscFunction( InitSystem, struct SYSTEM *s)
 	OscCall( OscCamSetRegisterValue, CAM_REG_RESERVED_0x20, 0x3d5);
 
 	OscCall( OscCamSetAreaOfInterest, 0, 0, OSC_CAM_MAX_IMAGE_WIDTH, OSC_CAM_MAX_IMAGE_HEIGHT);
-	OscCall( OscCamSetupPerspective, OSC_CAM_PERSPECTIVE_180DEG_ROTATE);
+	OscCall( OscCamSetupPerspective, OSC_CAM_PERSPECTIVE_DEFAULT);
 
 	OscCall( OscCamSetFrameBuffer, 0, OSC_CAM_MAX_IMAGE_WIDTH * OSC_CAM_MAX_IMAGE_HEIGHT, s->frameBuffer1, TRUE);
 	OscCall( OscCamSetFrameBuffer, 1, OSC_CAM_MAX_IMAGE_WIDTH * OSC_CAM_MAX_IMAGE_HEIGHT, s->frameBuffer2, TRUE);
